@@ -15,7 +15,7 @@ Contenido comment: ''!
 !Contenido methodsFor!
 
 iniciar:cod tit:unTit gen:unGen anio:unAnio tam:unTam cal:unCal prom:unProm dispo:unDispo
-"Inicializa un contenido con sus datos"
+"Inicializa el Contenido con sus datos"
 codigo:=cod.
 titulo:=unTit.
 genero:=unGen.
@@ -43,6 +43,7 @@ modDisponibilidad:otraDispo
 disponible:=otraDispo.!
 
 modGenero:otroGen
+"Modifica el genero del Contenido"
 genero:=otroGen.!
 
 modPromedio:otroProm
@@ -112,7 +113,7 @@ verTitulo!public! !
 !Contenido class methodsFor!
 
 crear:cod con:unTit con:unGen con:unAnio con:unTam con:unCal con:unProm con:unDispo
-	"Crea una instancia de la clase Remedio y la inicializa con sus datos"
+	"Crea una instancia de la clase Contenido y la inicializa con sus datos"
 	^self new iniciar:cod tit:unTit gen:unGen anio:unAnio tam:unTam cal:unCal prom:unProm dispo:unDispo! !
 
 !Contenido class categoriesForMethods!
