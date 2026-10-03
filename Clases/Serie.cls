@@ -1,7 +1,7 @@
 ﻿"Filed out from Dolphin Smalltalk"!
 
 Contenido subclass: #Serie
-	instanceVariableNames: 'cantidadTemporadas estadoEmision'
+	instanceVariableNames: 'temporadas estado'
 	classVariableNames: ''
 	poolDictionaries: ''
 	classInstanceVariableNames: ''!
@@ -27,24 +27,24 @@ tamanio:=unTam.
 calificacion:=unCal.
 promedio:=unProm.
 disponible:=unDispo.
-cantidadTemporadas :=unTempor.
-estadoEmision :=unEstado.!
+temporadas :=unTempor.
+estado :=unEstado.!
 
 modEstado:otroEstado
 "Modifica el estado de emision de la Serie"
-estadoEmision:=otroEstado.!
+estado:=otroEstado.!
 
 modTemporadas:otroTempor
 "Modifica la cantidad de temporadas de la Serie"
-cantidadTemporadas:=otroTempor.!
+temporadas:=otroTempor.!
 
 verEstado
 "Retorna el estado de emision de la Serie"
-^estadoEmision!
+^estado!
 
 verTemporadas
 "Retorna la cantidad de temporadas de la Serie"
-^cantidadTemporadas! !
+^temporadas! !
 
 !Serie categoriesForMethods!
 esSerie!public! !
@@ -59,7 +59,7 @@ verTemporadas!public! !
 
 crear:cod con:unTit con:unGen con:unAnio con:unTam con:unCal con:unProm con:unDispo con:unTempor con:unEstado
 	"Crea una instancia de la clase Remedio y la inicializa con sus datos"
-	^self new iniciar:cod tit:unTit gen:unGen anio:unAnio tam:unTam cal:unCal prom:unProm dispo:unDispo tempor:unTempor estad:unEstado! !
+	^self new iniciar:cod tit:unTit gen:unGen anio:unAnio tam:unTam cal:unCal prom:unProm dispo:unDispo tempo:unTempor estado:unEstado! !
 
 !Serie class categoriesForMethods!
 crear:con:con:con:con:con:con:con:con:con:!public! !
