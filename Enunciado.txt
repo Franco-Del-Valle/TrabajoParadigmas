@@ -1,0 +1,30 @@
+Inciso 2 - Sistema de Gestión de Plataforma de
+Streaming
+Una empresa de entretenimiento desea desarrollar un sistema que simule la
+gestión del catálogo de una plataforma de streaming. De la plataforma se
+conoce nombre, empresa propietaria, año de lanzamiento, capacidad total de
+almacenamiento y tipo de suscripción principal.
+El catálogo está compuesto por contenidos de los que se conoce código de
+identificación, título, género, año de estreno, tamaño que ocupa, calificación
+promedio y si se encuentra disponible para reproducción.
+Existen películas y series. De las películas interesa conocer la duración en
+minutos y si fueron estrenadas en cine. De las series se debe registrar la
+cantidad de temporadas y si se encuentran finalizadas o continúan en emisión.
+Cada contenido deberá poder determinar si es recomendable para una
+maratón. Una película será recomendable si su duración no supera los 120
+minutos y su calificación es al menos 7; una serie será recomendable si está
+finalizada, posee hasta 3 temporadas y su calificación es al menos 7.
+El sistema debe permitir agregar tantos contenidos como se desee, pero la
+suma del espacio ocupado no puede superar la capacidad total de
+almacenamiento de la plataforma. Se debe poder buscar un contenido por
+código, modificar sus datos o eliminarlo.
+El usuario debe poder generar un listado de contenidos con calificación igual o
+superior a 7 puntos, filtrar el catálogo por género y obtener un listado general
+de contenidos recomendables para una maratón, consultando a cada contenido
+según corresponda.
+Se deberá calcular el tamaño promedio ocupado por los contenidos y mostrar
+aquellos que superen dicho promedio. Además, interesa conocer el contenido
+con mayor calificación.
+Por último, el sistema debe permitir eliminar todos los contenidos que ya no se
+encuentren disponibles y guardar en un diccionario la cantidad de contenidos
+por género.
