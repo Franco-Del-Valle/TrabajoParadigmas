@@ -14,6 +14,9 @@ Serie comment: ''!
 
 !Serie methodsFor!
 
+esPelicula
+^false!
+
 esSerie
 ^true!
 
@@ -47,6 +50,7 @@ verTemporadas
 ^temporadas! !
 
 !Serie categoriesForMethods!
+esPelicula!public! !
 esSerie!public! !
 iniciar:tit:gen:anio:tam:cal:prom:dispo:tempo:estado:!public! !
 modEstado:!public! !

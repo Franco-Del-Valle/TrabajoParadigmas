@@ -17,6 +17,9 @@ Pelicula comment: ''!
 esPelicula
 ^true!
 
+esSerie
+^false!
+
 iniciar:cod tit:unTit gen:unGen anio:unAnio tam:unTam cal:unCal prom:unProm dispo:unDispo durac:unDurac estre:unEstreno
 "Inicializa una pelicula con sus datos"
 codigo:=cod.
@@ -49,6 +52,7 @@ verEstreno
 
 !Pelicula categoriesForMethods!
 esPelicula!public! !
+esSerie!public! !
 iniciar:tit:gen:anio:tam:cal:prom:dispo:durac:estre:!public! !
 modDuracion:!public! !
 modEstrenado:!public! !
