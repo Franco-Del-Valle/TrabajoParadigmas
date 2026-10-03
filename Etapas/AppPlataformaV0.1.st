@@ -38,6 +38,7 @@ acciones at: 1 put:[
 			plat agregarContenido: cont.
 			capac:= capac - tam.
 		].
+		Transcript show: 'El almacenamiento restante de la plataforma ',plat verNombre,' es ', (capac)printString,' GB';cr.
 	]ifFalse:[
 		Transcript
 			show: 'El contenido no puede ser cargado a la plataforma por falta de capacidad de almacenamiento';cr;
@@ -47,6 +48,7 @@ acciones at: 1 put:[
 
 acciones at: 2 put:[
 	Transcript show: '---Buscando contenido por codigo---';cr.
+	
 ].
 
 acciones at: 3 put:[
