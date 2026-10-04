@@ -84,7 +84,10 @@ verNombre
 
 verSuscripcion
 "Retorna el tipo de suscripcion principal de la Plataforma"
-^susPrincipal! !
+^susPrincipal!
+
+verTodos
+^conjCont! !
 
 !Plataforma categoriesForMethods!
 agregarContenido:!public! !
@@ -104,6 +107,7 @@ verEmpresa!public! !
 verLanzamiento!public! !
 verNombre!public! !
 verSuscripcion!public! !
+verTodos!public! !
 !
 
 !Plataforma class methodsFor!
