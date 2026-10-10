@@ -30,7 +30,7 @@ existe:unCont
 "Retorna true si un contenido esta dentro de la clase Plataforma"
 ^conjCont includes: unCont.!
 
-iniciar:nom empre:unEmpre lanz:unAnioLanz capac:unCapac susPrinc:unSusPrinc 
+iniciarPlataforma:nom empre:unEmpre lanz:unAnioLanz capac:unCapac susPrinc:unSusPrinc 
 "Inicializa la Plataforma con sus datos"
 nombre:=nom.
 empresa:=unEmpre.
@@ -94,7 +94,7 @@ agregarContenido:!public! !
 eliminarContenido:!public! !
 esVacio!public! !
 existe:!public! !
-iniciar:empre:lanz:capac:susPrinc:!public! !
+iniciarPlataforma:empre:lanz:capac:susPrinc:!public! !
 modCapacidad:!public! !
 modEmpresa:!public! !
 modLanzamiento:!public! !
@@ -112,11 +112,11 @@ verTodos!public! !
 
 !Plataforma class methodsFor!
 
-crear:nom con:unEmpre con:unAnioLanz con:unCapac con:unSusPrinc
+crearPlataforma:nom con:unEmpre con:unAnioLanz con:unCapac con:unSusPrinc
 	"Crea una instancia de la clase Plataforma y la inicializa con sus datos"
-	^self new iniciar:nom empre:unEmpre lanz:unAnioLanz capac:unCapac susPrinc:unSusPrinc.! !
+	^super new iniciarPlataforma:nom empre:unEmpre lanz:unAnioLanz capac:unCapac susPrinc:unSusPrinc.! !
 
 !Plataforma class categoriesForMethods!
-crear:con:con:con:con:!public! !
+crearPlataforma:con:con:con:con:!public! !
 !
 

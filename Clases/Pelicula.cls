@@ -14,22 +14,9 @@ Pelicula comment: ''!
 
 !Pelicula methodsFor!
 
-esPelicula
-^true!
-
-esSerie
-^false!
-
-iniciar:cod tit:unTit gen:unGen anio:unAnio tam:unTam cal:unCal prom:unProm dispo:unDispo durac:unDurac estre:unEstreno
+iniciarPelicula:cod tit:unTit gen:unGen anio:unAnio tam:unTam cal:unCal prom:unProm dispo:unDispo durac:unDurac estre:unEstreno
 "Inicializa una pelicula con sus datos"
-codigo:=cod.
-titulo:=unTit.
-genero:=unGen.
-anioEstreno:=unAnio.
-tamanio:=unTam.
-calificacion:=unCal.
-promedio:=unProm.
-disponible:=unDispo.
+super iniciarContenido: cod tit: unTit gen: unGen anio: unAnio tam: unTam cal: unCal prom: unProm dispo: unDispo.
 duracionMinutos:=unDurac.
 estrenadaCine:=unEstreno.
 !
@@ -51,9 +38,7 @@ verEstreno
 ^estrenadaCine! !
 
 !Pelicula categoriesForMethods!
-esPelicula!public! !
-esSerie!public! !
-iniciar:tit:gen:anio:tam:cal:prom:dispo:durac:estre:!public! !
+iniciarPelicula:tit:gen:anio:tam:cal:prom:dispo:durac:estre:!public! !
 modDuracion:!public! !
 modEstrenado:!public! !
 verDuracion!public! !
@@ -62,11 +47,11 @@ verEstreno!public! !
 
 !Pelicula class methodsFor!
 
-crear:cod con:unTit con:unGen con:unAnio con:unTam con:unCal con:unProm con:unDispo con:unDurac con:unEstreno
+crearPelicula:cod con:unTit con:unGen con:unAnio con:unTam con:unCal con:unProm con:unDispo con:unDurac con:unEstreno
 	"Crea una instancia de la clase Remedio y la inicializa con sus datos"
-	^self new iniciar:cod tit:unTit gen:unGen anio:unAnio tam:unTam cal:unCal prom:unProm dispo:unDispo durac:unDurac estre:unEstreno! !
+	^super new iniciarPelicula:cod tit:unTit gen:unGen anio:unAnio tam:unTam cal:unCal prom:unProm dispo:unDispo durac:unDurac estre:unEstreno! !
 
 !Pelicula class categoriesForMethods!
-crear:con:con:con:con:con:con:con:con:con:!public! !
+crearPelicula:con:con:con:con:con:con:con:con:con:!public! !
 !
 

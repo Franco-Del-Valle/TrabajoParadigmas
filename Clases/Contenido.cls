@@ -14,7 +14,7 @@ Contenido comment: ''!
 
 !Contenido methodsFor!
 
-iniciar:cod tit:unTit gen:unGen anio:unAnio tam:unTam cal:unCal prom:unProm dispo:unDispo
+iniciarContenido:cod tit:unTit gen:unGen anio:unAnio tam:unTam cal:unCal prom:unProm dispo:unDispo
 "Inicializa el Contenido con sus datos"
 codigo:=cod.
 titulo:=unTit.
@@ -91,7 +91,7 @@ verTitulo
 ^titulo! !
 
 !Contenido categoriesForMethods!
-iniciar:tit:gen:anio:tam:cal:prom:dispo:!public! !
+iniciarContenido:tit:gen:anio:tam:cal:prom:dispo:!public! !
 modAnio:!public! !
 modCalificacion:!public! !
 modCodigo:!public! !
@@ -112,11 +112,11 @@ verTitulo!public! !
 
 !Contenido class methodsFor!
 
-crear:cod con:unTit con:unGen con:unAnio con:unTam con:unCal con:unProm con:unDispo
+crearContenido:cod con:unTit con:unGen con:unAnio con:unTam con:unCal con:unProm con:unDispo
 	"Crea una instancia de la clase Contenido y la inicializa con sus datos"
-	^self new iniciar:cod tit:unTit gen:unGen anio:unAnio tam:unTam cal:unCal prom:unProm dispo:unDispo! !
+	^super new iniciarContenido:cod tit:unTit gen:unGen anio:unAnio tam:unTam cal:unCal prom:unProm dispo:unDispo! !
 
 !Contenido class categoriesForMethods!
-crear:con:con:con:con:con:con:con:!public! !
+crearContenido:con:con:con:con:con:con:con:!public! !
 !
 
